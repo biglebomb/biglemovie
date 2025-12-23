@@ -1,0 +1,13 @@
+{
+  "navHome": "Home",
+  "navSearch": "Search",
+  "navFavorites": "Favorites",
+  "logout": "Logout",
+  "theme": "Theme",
+  "language": "Language",
+  "authTitle": "Welcome",
+  "authSubtitle": "Login or create an account to continue.",
+  "continueGoogle": "Continue with Google",
+  "displayNamePrompt": "Display name"
+}
+
