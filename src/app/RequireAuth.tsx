@@ -6,7 +6,13 @@ export function RequireAuth({ children }: { children: ReactNode }) {
   const { isAuthenticated, isLoading } = useAuth()
   const location = useLocation()
 
-  if (isLoading) return null
+  if (isLoading) {
+    return (
+      <div className="grid min-h-dvh place-items-center">
+        <div className="text-muted-foreground">Loading...</div>
+      </div>
+    )
+  }
   if (!isAuthenticated) {
     const next = encodeURIComponent(location.pathname + location.search)
     return <Navigate to={`/auth?next=${next}`} replace />
